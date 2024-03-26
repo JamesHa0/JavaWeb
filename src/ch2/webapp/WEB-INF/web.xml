@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ch2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>FirstServletInfo</servlet-name>
+    <servlet-class>com.demo.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FirstServletInfo</servlet-name>
+    <url-pattern>/First</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SecondServletInfo</servlet-name>
+    <servlet-class>com.demo.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SecondServletInfo</servlet-name>
+    <url-pattern>/Second</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>HelloUserServlet</servlet-name>
+    <servlet-class>com.test1.HelloUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloUserServlet</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ParamServlet</servlet-name>
+    <servlet-class>com.test2.ParamServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ParamServlet</servlet-name>
+    <url-pattern>/Param</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>ShowHeadersServlet</servlet-name>
+	<servlet-class>com.test3.ShowHeadersServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>ShowHeadersServlet</servlet-name>
+	<url-pattern>/showheaders</url-pattern>
+  </servlet-mapping>
+</web-app>
