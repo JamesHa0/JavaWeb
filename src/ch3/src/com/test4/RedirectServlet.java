@@ -12,9 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/RedirectServlet")
 public class RedirectServlet extends HttpServlet {
-
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		String username = req.getParameter("username");
 		String password = req.getParameter("password");
 		resp.setContentType("text/html;charset=UTF-8");
@@ -23,10 +21,10 @@ public class RedirectServlet extends HttpServlet {
 		out.println("<html><body>");
 		if ("admin".equals(username) && "admin".equals(password)) {
 			req.setAttribute("username", username);
-			RequestDispatcher rd = req.getRequestDispatcher("/welcome.jsp");
+			RequestDispatcher rd = req.getRequestDispatcher("/welcome.html");
 			rd.forward(req, resp);
 		} else {
-			RequestDispatcher rd = req.getRequestDispatcher("/login.html");
+			RequestDispatcher rd = req.getRequestDispatcher("/error.html");
 			rd.forward(req, resp);
 		}
 		out.println("</body></html>");

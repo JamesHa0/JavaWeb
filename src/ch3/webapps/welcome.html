@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="GBK">
+<title>welcome</title>
+</head>
+<body>
+	<h1>登陆成功！</h1>
+	<p id="showName"></p>
+	<script>
+		var url = new URLSearchParams(window.location.search);
+		var name = url.get('username');
+		document.getElementById('showName').innerText = name + ",欢迎回来";
+	</script>
+</body>
+</html>
