@@ -14,6 +14,6 @@
 			throw new RuntimeException("没有指定name的属性值");
 		}
 	%>
-	Hello,<%=name %> 
+	Hello,<%=name%>
 </body>
 </html>
