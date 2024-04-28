@@ -4,12 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>footer</title>
+<title>main</title>
 </head>
 <body>
-	<hr />
+	<jsp:include page="header.html" flush="true" />
 	<div align="center">
-		<em>Copyright &copy;2022&nbsp;New Century Web Bookstore,Inc.</em>
+		欢迎光临新世纪网上书店<br /> <a href="">开始购买图书</a>
 	</div>
+	<jsp:include page="footer.jsp" flush="true" />
 </body>
 </html>

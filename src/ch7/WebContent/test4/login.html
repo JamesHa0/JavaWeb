@@ -5,12 +5,10 @@
 <title>login</title>
 </head>
 <body>
-	<form action="display.jsp" method="post">
-	请输入用户名：<input name="userName"/></br>
-	请输入密码：<input type=password name="password"/></br>
-	请输入邮箱：<input name="email"/></br>
-	<input type=submit values="提交"/>
-	<input type=reset values="重置" />
+	<form action="../loginServlet" method="post">
+		请输入用户名：<input name="userName" /><br /> 请输入密码：<input type=password
+			name="password" /><br /> 请输入邮箱：<input name="email" /><br /> <input
+			type=submit value="提交" /> <input type=reset value="重置" />
 	</form>
 </body>
 </html>
