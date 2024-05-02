@@ -16,12 +16,10 @@ public class SendCookieServlet extends HttpServlet {
 			throws ServletException, IOException {
 		String cookieName = "zyh";
 		String cookieValue = "22023237";
-		request.getCookies();
-		Cookie[] cookies = request.getCookies();
 		response.addCookie(new Cookie(cookieName, cookieValue));
 
 		PrintWriter writer = response.getWriter();
-		writer.print("<html><h2>A cookie has been got from brower</h2>");
+		writer.print("<html><h2>A cookie has been got from brower</h2></html>");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
