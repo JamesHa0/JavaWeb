@@ -1,11 +1,6 @@
 package com.demo;
 
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
-import com.sun.corba.se.pept.transport.Connection;
+import java.sql.*;
 
 public class BookDAOImplement implements BookDAO{
 
