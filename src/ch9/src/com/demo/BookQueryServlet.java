@@ -9,7 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/BookQueryServlet")
 public class BookQueryServlet extends HttpServlet {
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		String bookid = request.getParameter("bookid");
 		BookDAOImplement queryBook = new BookDAOImplement();
 		BookBean book = new BookBean();
@@ -17,17 +18,18 @@ public class BookQueryServlet extends HttpServlet {
 			book = queryBook.searchBook(bookid);
 			if (book != null) {
 				request.setAttribute("book", book);
-				request.getRequestDispatcher("display.jsp").forward(request,response);
-			}else {
-				request.getRequestDispatcher("errorPage.jsp").forward(request,response);
+				request.getRequestDispatcher("display.jsp").forward(request, response);
+			} else {
+				request.getRequestDispatcher("errorPage.jsp").forward(request, response);
 			}
-		}catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+
 	}
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		doGet(request, response);
 	}
 

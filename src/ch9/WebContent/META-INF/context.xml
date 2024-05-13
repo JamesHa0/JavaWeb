@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/2002/xmlspec/dtd/2.10/xmlspec.dtd">
+<Context reloadable = "true">
+<!-- 
+	name:数据源名称
+	type:指定资源类型
+	maxActive:同时刻，连接池中活动连接的最大数
+	maxIdle:连接池中处于空闲的连接的最大数，处于等待状态，不会被清除
+	username:数据库用户名
+	password:数据库密码
+	maxWait:在没有可用连接时，连接池在抛出异常前等待的最大毫秒数
+	driverClassName:使用的JDBC驱动程序的完整类名
+	url:传递给JDBC驱动程序的数据库URL
+ -->
+<Resource 
+	name = "DataSource"
+	type = "javax.sql.DataSource"
+	maxActive = "10"
+	maxIdle = "4"
+	username = "root"
+	password = ""
+	maxWait = "5000"
+	driverClassName = "com.mysql.jdbc.Driver"
+	url = "jdbc:mysql://127.0.0.1:3306/bookstore"/>
+</Context>
