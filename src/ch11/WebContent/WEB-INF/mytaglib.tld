@@ -5,7 +5,7 @@
     version="2.0">
     <tlib-version>1.1</tlib-version>
   	<short-name>MyTag</short-name>
-  	<uri>http://www.domain.com/taglib</uri>
+  	<uri>Mytaglib</uri>
   	<tag>
   		 <description>Square Root</description>
   		 <name>sqrt</name>
